@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	
+	<persistence-unit name="ERP-Bank">
+	<jta-data-source>java:/bank</jta-data-source>
+		<class>tn.esprit.entites.Account</class>
+		<class>tn.esprit.entites.Aspnetrole</class>
+		<class>tn.esprit.entites.Aspnetuser</class>
+		<class>tn.esprit.entites.Aspnetuserclaim</class>
+		<class>tn.esprit.entites.Aspnetuserlogin</class>
+		<class>tn.esprit.entites.AspnetuserloginPK</class>
+		<class>tn.esprit.entites.Aspnetuserrole</class>
+		<class>tn.esprit.entites.AspnetuserrolePK</class>
+		<class>tn.esprit.entites.Candidature</class>
+		<class>tn.esprit.entites.City</class>
+		<class>tn.esprit.entites.Client</class>
+		<class>tn.esprit.entites.Contract</class>
+		<class>tn.esprit.entites.Draft</class>
+		<class>tn.esprit.entites.Employee</class>
+		<class>tn.esprit.entites.Local</class>
+		<class>tn.esprit.entites.Material</class>
+		<class>tn.esprit.entites.Meeting</class>
+		<class>tn.esprit.entites.Payroll</class>
+		<class>tn.esprit.entites.Supplier</class>
+		<class>tn.esprit.entites.TrainingSession</class>
+		<class>tn.esprit.entites.Transaction</class>
+		<class>tn.esprit.entites.Transfer</class>
+		<properties>
+	<property name="hibernate.hbm2ddl.auto" value="update"/>
+	<property name="hibernate.show_sql" value="true"/>
+	<property name="hibernate.format_sql" value="true"/>
+
+	</properties>
+	</persistence-unit>
+</persistence>
